@@ -18,17 +18,17 @@
         });
 
         $routeProvider
-            .when("/char", {
+            .when("/singlepage/char", {
                 templateUrl: './character/characters.html',
                 controller: "charactersController",
                 controllerAs: "characters"
             })
-            .when("/", {
+            .when("/singlepage/", {
                 templateUrl: './about/about.html',
                 controller: "aboutController",
                 controllerAs: "about"
             })
-            .when("/markov", {
+            .when("/singlepage/markov", {
                 templateUrl: './markov/markov.html',
                 controller: "markovController",
                 controllerAs: "markov"
