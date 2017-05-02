@@ -1,0 +1,36 @@
+<div class="view-content" style="margin-top: 5vh;">
+
+    <div class="pd-t-16" style="width: 100%;">
+        <p> A Markov chain is a type of Markov process that has either discrete state space or discrete index set (often representing time), but the precise definition of a Markov chain varies. For example, it is common to define a Markov chain as a Markov process in either discrete or continuous time with a countable state space (thus regardless of the nature of time) but it is also common to define a Markov chain as having discrete time in either countable or continuous state space (thus regardless of the state space).  </p>
+    </div>
+
+
+
+    <div class="div-w100">
+        <div >
+            <p><b> Type a text or phrase to discovery the percent of vowel followed by other vowel </b> </p>
+        </div>
+
+        <textarea name="markovString" ng-model="markov.markovString" class="text-area" rows="15" autofocus required>
+                    </textarea>
+
+    </div>
+
+    <div class="div-button">
+
+        <button class="btn btn-primary button float-right" ng-click="markov.markovFunc()">Check</button>
+
+        <button class="btn btn-primary button btn-clear" ng-click="markov.clear()">Clear</button>
+
+    </div>
+
+    <div ng-show="markov.vowelFollowedByVowel">
+
+        <h1> Information: </h1>
+
+        <p>  Vowel follow by vowel : {{markov.vowelFollowedByVowel}}%</p>
+        <p>  Vowel follow by Consonant : {{markov.vowelFollowedByConsonant}}% </p>
+
+    </div>
+
+</div>

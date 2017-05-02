@@ -1,0 +1,29 @@
+
+<div class="view-content" style="margin-top: 5vh;">
+
+    <h1>Game of Thrones Characters!</h1>
+
+    <div>
+
+        <input type="text" class="form-control" ng-model="searchChar" placeholder="Search">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="char in characters.characters | filter:searchChar">
+                    <td>{{char.name}}</td>
+                    <td>{{char.role}}</td>
+                    <td>{{char.gender}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
