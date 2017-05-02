@@ -18,26 +18,21 @@
         });
 
         $routeProvider
-            .when("/char", {
-                templateUrl: 'character/characters.html',
+            .when("/singlepage/char", {
+                templateUrl: 'singlepage/character/characters.html',
                 controller: "charactersController",
                 controllerAs: "characters"
             })
-            .when("/", {
-                templateUrl: 'about/about.html',
+            .when("/singlepage/", {
+                templateUrl: 'singlepage/about/about.html',
                 controller: "aboutController",
                 controllerAs: "about"
             })
-            .when("/markov", {
-                templateUrl: 'markov/markov.html',
+            .when("/singlepage/markov", {
+                templateUrl: 'singlepage/markov/markov.html',
                 controller: "markovController",
                 controllerAs: "markov"
-            })/*
-            .when("/avengers", {
-                templateUrl: 'templates/avengers.html',
-                controller: "avengerController",
-                controllerAs: "avenger"
-            })*/
+            })
             .otherwise({redirectTo:"/"});
 
     };
