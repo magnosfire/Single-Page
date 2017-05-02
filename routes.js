@@ -19,17 +19,17 @@
 
         $routeProvider
             .when("/singlepage/char", {
-                templateUrl: './character/characters.html',
+                templateUrl: 'character/characters.html',
                 controller: "charactersController",
                 controllerAs: "characters"
             })
             .when("/singlepage/", {
-                templateUrl: './about/about.html',
+                templateUrl: 'about/about.html',
                 controller: "aboutController",
                 controllerAs: "about"
             })
             .when("/singlepage/markov", {
-                templateUrl: './markov/markov.html',
+                templateUrl: 'markov/markov.html',
                 controller: "markovController",
                 controllerAs: "markov"
             })
