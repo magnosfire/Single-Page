@@ -19,25 +19,20 @@
 
         $routeProvider
             .when("/char", {
-                templateUrl: 'character/characters.html',
+                templateUrl: './character/characters.html',
                 controller: "charactersController",
                 controllerAs: "characters"
             })
             .when("/", {
-                templateUrl: 'about/about.html',
+                templateUrl: './about/about.html',
                 controller: "aboutController",
                 controllerAs: "about"
             })
             .when("/markov", {
-                templateUrl: 'markov/markov.html',
+                templateUrl: './markov/markov.html',
                 controller: "markovController",
                 controllerAs: "markov"
-            })/*
-            .when("/avengers", {
-                templateUrl: 'templates/avengers.html',
-                controller: "avengerController",
-                controllerAs: "avenger"
-            })*/
+            })
             .otherwise({redirectTo:"/"});
 
     };
